@@ -10,4 +10,7 @@
 #
 
 class Event < ActiveRecord::Base
+  has_many :invites
+  has_many :persons, through: :invites
+
 end
