@@ -13,3 +13,4 @@ event = Event.first
 
 #Demo Invites
 person.invites.create(event: event)
+event.invites.create(person: person)
