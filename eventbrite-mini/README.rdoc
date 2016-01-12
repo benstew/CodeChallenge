@@ -3,18 +3,18 @@
 ==== Eventbrite Mini Coding Challenge
 ==== Time Limit: 1 hour
 
-=== Usage:
+== Usage:
 ==== This "Eventbrite Mini" coding challenge attempts to simulate the user experience of the standard Eventbrite web application with very limited features
 ==== Users have standard CRUD abilities on events
 ==== The web application is centered around the seed file, five demo events and one user profile will be created. This was done due to time restrictions to avoid setting up and testing a fully featured authentication system
 
-=== If I had more time:
+== If I had more time:
 ==== Further develop the functionality of invites
 ==== User authentication with Devise gem
 ==== Recurring events
 ==== Include unit and feature tests
 ==== Add Bootstrap for styling
 
-===Changes to the Project Guidelines:
+== Changes to the Project Guidelines:
 ==== Included an email attribute to the Person model. Necessary for future features like authentication
 ==== Added a seed file to help quickly demo the application when running the server
