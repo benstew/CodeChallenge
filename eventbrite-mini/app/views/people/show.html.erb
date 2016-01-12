@@ -1,19 +1,33 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Firstname:</strong>
-  <%= @person.firstname %>
-</p>
+<div class="your-events">
+  <h3>My Events</h3>
+  <% @user_events.each do |event| %>
+    <%= event.name %>
+    <%= event.date %>
+  <% end %>
+</div>
 
-<p>
-  <strong>Lastname:</strong>
-  <%= @person.lastname %>
-</p>
+<br>
 
-<p>
-  <strong>Email:</strong>
-  <%= @person.email %>
-</p>
+<div class="profile-details">
+  <h3>Profile Information</h3>
+    <p>
+      <strong>Firstname:</strong>
+      <%= @person.firstname %>
+    </p>
+
+    <p>
+      <strong>Lastname:</strong>
+      <%= @person.lastname %>
+    </p>
+
+    <p>
+      <strong>Email:</strong>
+      <%= @person.email %>
+    </p>
+</div>
+
 
 <%= link_to 'Edit', edit_person_path(@person) %> |
 <%= link_to 'Back', people_path %>
