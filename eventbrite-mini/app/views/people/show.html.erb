@@ -2,10 +2,14 @@
 
 <div class="your-events">
   <h3>My Events</h3>
-  <% @user_events.each do |event| %>
-    <%= event.name %>
-    <%= event.date %>
-  <% end %>
+    <ol>
+    <% @user_events.each do |event| %>
+      <li>
+        <%= event.name %>
+        <%= event.date %>
+      </li>
+    <% end %>
+  </ol>
 </div>
 
 <br>

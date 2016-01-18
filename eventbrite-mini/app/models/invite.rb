@@ -12,5 +12,7 @@
 class Invite < ActiveRecord::Base
   belongs_to :person
   belongs_to :event
-  
+
+  validates :event_id, :uniqueness => {:scope=>:person_id}
+
 end
